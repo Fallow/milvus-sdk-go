@@ -8,14 +8,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/client"
+	"github.com/Fallow/milvus-sdk-go/v2/client"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/test/base"
+	"github.com/Fallow/milvus-sdk-go/v2/test/base"
 	"github.com/stretchr/testify/require"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/entity"
+	"github.com/Fallow/milvus-sdk-go/v2/entity"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/test/common"
+	"github.com/Fallow/milvus-sdk-go/v2/test/common"
 )
 
 const configQnNodes = int32(4)

@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/entity"
+	"github.com/Fallow/milvus-sdk-go/v2/entity"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/test/common"
+	"github.com/Fallow/milvus-sdk-go/v2/test/common"
 	"github.com/stretchr/testify/require"
 )
 

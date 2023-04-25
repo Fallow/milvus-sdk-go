@@ -14,8 +14,8 @@ package client
 import (
 	"context"
 
+	"github.com/Fallow/milvus-sdk-go/v2/entity"
 	server "github.com/milvus-io/milvus-proto/go-api/milvuspb"
-	"github.com/milvus-io/milvus-sdk-go/v2/entity"
 )
 
 // ListResourceGroups returns list of resource group names in current Milvus instance.

@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"reflect"
 
+	"github.com/Fallow/milvus-sdk-go/v2/entity"
 	"github.com/golang/protobuf/proto"
 	server "github.com/milvus-io/milvus-proto/go-api/milvuspb"
 	schema "github.com/milvus-io/milvus-proto/go-api/schemapb"
-	"github.com/milvus-io/milvus-sdk-go/v2/entity"
 )
 
 // CreateCollectionByRow create collection by row

@@ -3,7 +3,7 @@ package client
 import (
 	"sync"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/entity"
+	"github.com/Fallow/milvus-sdk-go/v2/entity"
 )
 
 // Magical timestamps for communicating with server

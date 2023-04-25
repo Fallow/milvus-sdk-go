@@ -37,4 +37,4 @@ jobs:
 
     - name: Smoke Test
       run: |
-        go test github.com/milvus-io/milvus-sdk-go/v2/tests/e2e/... -v --failfast
+        go test github.com/Fallow/milvus-sdk-go/v2/tests/e2e/... -v --failfast

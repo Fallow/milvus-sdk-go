@@ -9,10 +9,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/client"
+	"github.com/Fallow/milvus-sdk-go/v2/client"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/entity"
-	"github.com/milvus-io/milvus-sdk-go/v2/test/common"
+	"github.com/Fallow/milvus-sdk-go/v2/entity"
+	"github.com/Fallow/milvus-sdk-go/v2/test/common"
 )
 
 // test query from default partition
@@ -155,7 +155,7 @@ func TestQueryEmptyPartitionName(t *testing.T) {
 
 // query with empty partition names, actually query from all partitions
 func TestQueryMultiPartitions(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/368")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/368")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -196,7 +196,7 @@ func TestQueryMultiPartitions(t *testing.T) {
 
 // test query with empty ids
 func TestQueryEmptyIds(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/365")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/365")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -223,7 +223,7 @@ func TestQueryEmptyIds(t *testing.T) {
 
 // test query with non-primary field filter, and output scalar fields
 func TestQueryNonPrimaryFields(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/366")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/366")
 	t.Parallel()
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect

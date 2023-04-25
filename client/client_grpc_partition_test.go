@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Fallow/milvus-sdk-go/v2/entity"
 	"github.com/golang/protobuf/proto"
 	common "github.com/milvus-io/milvus-proto/go-api/commonpb"
 	server "github.com/milvus-io/milvus-proto/go-api/milvuspb"
-	"github.com/milvus-io/milvus-sdk-go/v2/entity"
 	"github.com/stretchr/testify/assert"
 )
 

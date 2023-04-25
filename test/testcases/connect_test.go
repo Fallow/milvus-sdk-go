@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/test/base"
-	"github.com/milvus-io/milvus-sdk-go/v2/test/common"
+	"github.com/Fallow/milvus-sdk-go/v2/test/base"
+	"github.com/Fallow/milvus-sdk-go/v2/test/common"
 )
 
 // test connect and close, connect again
@@ -35,7 +35,7 @@ func TestConnectClose(t *testing.T) {
 
 // test connect with timeout and invalid addr
 func TestConnectInvalidAddr(t *testing.T) {
-	t.Skipf("Issue: %s", "https://github.com/milvus-io/milvus-sdk-go/issues/345")
+	t.Skipf("Issue: %s", "https://github.com/Fallow/milvus-sdk-go/issues/345")
 	// connect
 	ctx := createContext(t, time.Second*10)
 

@@ -8,10 +8,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/client"
-	entity "github.com/milvus-io/milvus-sdk-go/v2/entity"
+	"github.com/Fallow/milvus-sdk-go/v2/client"
+	entity "github.com/Fallow/milvus-sdk-go/v2/entity"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/test/common"
+	"github.com/Fallow/milvus-sdk-go/v2/test/common"
 )
 
 // test create index with supported float vector index, L2 metric type
@@ -37,7 +37,7 @@ func TestCreateIndex(t *testing.T) {
 }
 
 func TestCreateIndexString(t *testing.T) {
-	t.Skipf("Not supported create index on varchar field, issue: %s", "https://github.com/milvus-io/milvus-sdk-go/issues/362")
+	t.Skipf("Not supported create index on varchar field, issue: %s", "https://github.com/Fallow/milvus-sdk-go/issues/362")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -71,7 +71,7 @@ func TestCreateIndexIp(t *testing.T) {
 
 // test create index with supported binary vector index
 func TestCreateIndexBinary(t *testing.T) {
-	t.Skipf("Issue: %s", "https://github.com/milvus-io/milvus-sdk-go/issues/351")
+	t.Skipf("Issue: %s", "https://github.com/Fallow/milvus-sdk-go/issues/351")
 	t.Parallel()
 
 	// create index
@@ -122,7 +122,7 @@ func TestCreateIndexWithoutName(t *testing.T) {
 
 // test new index by Generic index
 func TestCreateIndexGeneric(t *testing.T) {
-	t.Skipf("Issue: %s", "https://github.com/milvus-io/milvus-sdk-go/issues/351")
+	t.Skipf("Issue: %s", "https://github.com/Fallow/milvus-sdk-go/issues/351")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -184,7 +184,7 @@ func TestCreateIndexNotSupportedField(t *testing.T) {
 }
 
 // test create index with invalid params
-// https://github.com/milvus-io/milvus-sdk-go/issues/357
+// https://github.com/Fallow/milvus-sdk-go/issues/357
 func TestCreateIndexInvalidParams(t *testing.T) {
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
@@ -244,7 +244,7 @@ func TestCreateIndexInvalidParams(t *testing.T) {
 
 // test create index with nil index
 func TestCreateIndexNil(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/358")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/358")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -255,7 +255,7 @@ func TestCreateIndexNil(t *testing.T) {
 
 // test create index async true
 func TestCreateIndexAsync(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/361")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/361")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -282,7 +282,7 @@ func TestCreateIndexAsync(t *testing.T) {
 
 // test get index state
 func TestIndexState(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/361")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/361")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)

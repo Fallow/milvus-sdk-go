@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/client"
-	"github.com/milvus-io/milvus-sdk-go/v2/test/common"
+	"github.com/Fallow/milvus-sdk-go/v2/client"
+	"github.com/Fallow/milvus-sdk-go/v2/test/common"
 )
 
 func TestLoadCollectionReplicas(t *testing.T) {

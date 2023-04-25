@@ -10,9 +10,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/entity"
+	"github.com/Fallow/milvus-sdk-go/v2/entity"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/test/common"
+	"github.com/Fallow/milvus-sdk-go/v2/test/common"
 )
 
 // test create default floatVec and binaryVec collection
@@ -47,7 +47,7 @@ func TestCreateCollection(t *testing.T) {
 }
 
 func TestCreateAutoIdCollection(t *testing.T) {
-	t.Skipf("issue: %v", "https://github.com/milvus-io/milvus-sdk-go/issues/343")
+	t.Skipf("issue: %v", "https://github.com/Fallow/milvus-sdk-go/issues/343")
 	t.Parallel()
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	mc := createMilvusClient(ctx, t)
@@ -271,7 +271,7 @@ func TestCreateCollectionMultiAutoId(t *testing.T) {
 
 // test create collection with different autoId between pk field and schema
 func TestCreateCollectionInconsistentAutoId(t *testing.T) {
-	t.Skipf("Issue: %s", "https://github.com/milvus-io/milvus-sdk-go/issues/342")
+	t.Skipf("Issue: %s", "https://github.com/Fallow/milvus-sdk-go/issues/342")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	mc := createMilvusClient(ctx, t)
 

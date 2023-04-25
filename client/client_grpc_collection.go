@@ -16,9 +16,9 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/Fallow/milvus-sdk-go/v2/entity"
 	"github.com/cockroachdb/errors"
 	"github.com/golang/protobuf/proto"
-	"github.com/milvus-io/milvus-sdk-go/v2/entity"
 	"google.golang.org/grpc"
 
 	common "github.com/milvus-io/milvus-proto/go-api/commonpb"

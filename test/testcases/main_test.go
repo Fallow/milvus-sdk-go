@@ -12,11 +12,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/client"
+	"github.com/Fallow/milvus-sdk-go/v2/client"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/entity"
-	"github.com/milvus-io/milvus-sdk-go/v2/test/base"
-	"github.com/milvus-io/milvus-sdk-go/v2/test/common"
+	"github.com/Fallow/milvus-sdk-go/v2/entity"
+	"github.com/Fallow/milvus-sdk-go/v2/test/base"
+	"github.com/Fallow/milvus-sdk-go/v2/test/common"
 )
 
 var addr = flag.String("addr", "localhost:19530", "server host and port")

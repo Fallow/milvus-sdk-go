@@ -24,7 +24,7 @@ A collection schema is the logical definition of a collection.
 | `Collection Name` | Name of the collection to create. | String |
 | `Description` | Description of the collection to create. | String |
 | `AutoID` | Automatically assigns IDs to entities in the collection if it is set to `true`. | Boolean |
-| `Fields` | Defines the fields in the collection.  | See [Field Schema of Milvus](https://github.com/milvus-io/milvus-sdk-go/blob/7410632233597d4af58df727682ffb29f1d1d51d/entity/schema.go#L54-L63) for more information. |
+| `Fields` | Defines the fields in the collection.  | See [Field Schema of Milvus](https://github.com/Fallow/milvus-sdk-go/blob/7410632233597d4af58df727682ffb29f1d1d51d/entity/schema.go#L54-L63) for more information. |
 
 ### Field schema
 
@@ -37,7 +37,7 @@ A field schema is the logical definition of a field.
 | `PrimaryKey` | Switch value of primary key enablement.      | Boolean      |
 | `AutoID`   | Switch value of auto-generated ID enablement.  | Boolean |
 | `Description` | Description of the field.                   | String       |
-| `DataType` | Data type of the field. | See [FieldType](https://github.com/milvus-io/milvus-sdk-go/blob/9a7ab65299b4281cc24ad9da7834f6e25866f435/entity/schema.go#L116) for more information. |
+| `DataType` | Data type of the field. | See [FieldType](https://github.com/Fallow/milvus-sdk-go/blob/9a7ab65299b4281cc24ad9da7834f6e25866f435/entity/schema.go#L116) for more information. |
 | `TypeParams` | Type parameters for the field.               | Map of key string value string |
 | `IndexParams` | Index parameters for the field.             | Map of key string value string |
 

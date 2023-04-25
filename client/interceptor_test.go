@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/internal/utils/crypto"
+	"github.com/Fallow/milvus-sdk-go/v2/internal/utils/crypto"
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/grpc/metadata"
 )

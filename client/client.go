@@ -20,9 +20,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/Fallow/milvus-sdk-go/v2/entity"
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	grpc_retry "github.com/grpc-ecosystem/go-grpc-middleware/retry"
-	"github.com/milvus-io/milvus-sdk-go/v2/entity"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/backoff"
 	"google.golang.org/grpc/codes"

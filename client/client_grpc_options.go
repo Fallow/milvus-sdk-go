@@ -15,8 +15,8 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/Fallow/milvus-sdk-go/v2/entity"
 	server "github.com/milvus-io/milvus-proto/go-api/milvuspb"
-	"github.com/milvus-io/milvus-sdk-go/v2/entity"
 )
 
 // CreateCollectionOption is an option that is used to modify CreateCollectionRequest

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/entity"
+	"github.com/Fallow/milvus-sdk-go/v2/entity"
 )
 
 const (

@@ -3,8 +3,8 @@ package client
 import (
 	"context"
 
+	"github.com/Fallow/milvus-sdk-go/v2/internal/utils/crypto"
 	server "github.com/milvus-io/milvus-proto/go-api/milvuspb"
-	"github.com/milvus-io/milvus-sdk-go/v2/internal/utils/crypto"
 )
 
 // CreateCredential create new user and password

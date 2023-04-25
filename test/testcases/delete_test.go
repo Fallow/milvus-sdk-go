@@ -7,16 +7,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/client"
+	"github.com/Fallow/milvus-sdk-go/v2/client"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/entity"
-	"github.com/milvus-io/milvus-sdk-go/v2/test/common"
+	"github.com/Fallow/milvus-sdk-go/v2/entity"
+	"github.com/Fallow/milvus-sdk-go/v2/test/common"
 	"github.com/stretchr/testify/require"
 )
 
 // test delete int64 pks
 func TestDelete(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/368")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/368")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -41,7 +41,7 @@ func TestDelete(t *testing.T) {
 
 // test delete with string pks
 func TestDeleteStringPks(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/368")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/368")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -112,7 +112,7 @@ func TestDeleteNotExistPartition(t *testing.T) {
 
 // test delete empty partition names
 func TestDeleteEmptyPartitionNames(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/368")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/368")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -214,7 +214,7 @@ func TestDeletePartitionIdsNotMatch(t *testing.T) {
 
 // test delete with nil ids
 func TestDeleteNilIds(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/369")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/369")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -248,7 +248,7 @@ func TestDeleteNotPkIds(t *testing.T) {
 
 // test delete with duplicated data ids
 func TestDeleteDuplicatedPks(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/368")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/368")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)

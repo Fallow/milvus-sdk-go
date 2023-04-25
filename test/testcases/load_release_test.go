@@ -8,16 +8,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/entity"
+	"github.com/Fallow/milvus-sdk-go/v2/entity"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/milvus-io/milvus-sdk-go/v2/test/common"
+	"github.com/Fallow/milvus-sdk-go/v2/test/common"
 )
 
 // test load collection
 func TestLoadCollection(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/374")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/374")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -51,7 +51,7 @@ func TestLoadCollectionNotExist(t *testing.T) {
 
 // test load collection async
 func TestLoadCollectionAsync(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/374")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/374")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -94,7 +94,7 @@ func TestLoadCollectionWithoutIndex(t *testing.T) {
 
 // load collection with multi partitions
 func TestLoadCollectionMultiPartitions(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/374")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/374")
 	ctx := createContext(t, time.Second*common.DefaultTimeout*3)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -124,7 +124,7 @@ func TestLoadCollectionMultiPartitions(t *testing.T) {
 
 // test load with empty partition name ""
 func TestLoadEmptyPartitionName(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/373")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/373")
 	ctx := createContext(t, time.Second*common.DefaultTimeout*3)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -186,7 +186,7 @@ func TestLoadPartitionsNotExist(t *testing.T) {
 
 // test load partition
 func TestLoadPartitions(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/375")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/375")
 	ctx := createContext(t, time.Second*common.DefaultTimeout*3)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -228,7 +228,7 @@ func TestLoadPartitions(t *testing.T) {
 
 // test load multi partition
 func TestLoadMultiPartitions(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/375")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/375")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -255,7 +255,7 @@ func TestLoadMultiPartitions(t *testing.T) {
 
 // test load partitions repeatedly
 func TestLoadPartitionsRepeatedly(t *testing.T) {
-	t.Skip("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/375")
+	t.Skip("Issue: https://github.com/Fallow/milvus-sdk-go/issues/375")
 	ctx := createContext(t, time.Second*common.DefaultTimeout*3)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -280,7 +280,7 @@ func TestLoadPartitionsRepeatedly(t *testing.T) {
 
 // test load partitions async
 func TestLoadPartitionsAsync(t *testing.T) {
-	t.Skipf("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/374")
+	t.Skipf("Issue: https://github.com/Fallow/milvus-sdk-go/issues/374")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -399,7 +399,7 @@ func TestReleasePartitions(t *testing.T) {
 
 // test release partition not exist -> error or part exist -> success
 func TestReleasePartitionsNotExist(t *testing.T) {
-	t.Skipf("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/375")
+	t.Skipf("Issue: https://github.com/Fallow/milvus-sdk-go/issues/375")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
@@ -440,7 +440,7 @@ func TestReleasePartitionsNotExist(t *testing.T) {
 }
 
 func TestReleaseMultiPartitions(t *testing.T) {
-	t.Skipf("Issue: https://github.com/milvus-io/milvus-sdk-go/issues/375")
+	t.Skipf("Issue: https://github.com/Fallow/milvus-sdk-go/issues/375")
 	ctx := createContext(t, time.Second*common.DefaultTimeout)
 	// connect
 	mc := createMilvusClient(ctx, t)
