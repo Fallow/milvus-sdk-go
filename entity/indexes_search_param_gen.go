@@ -12,18 +12,30 @@ var _ SearchParam = &IndexFlatSearchParam{}
 
 // IndexFlatSearchParam search param struct for index type FLAT
 type IndexFlatSearchParam struct { //auto generated fields
+	nprobe int
 }
 
 // Params returns index construction params, implementing Index interface
 func(i *IndexFlatSearchParam) Params() map[string]interface{} {
-	return map[string]interface{} {//auto generated mapping 
+	return map[string]interface{
+		"nprobe": i.nprobe,
+	} {//auto generated mapping 
 	}
 }
 
 // NewIndexFlatSearchParam create index search param
-func NewIndexFlatSearchParam() (*IndexFlatSearchParam, error) {
+func NewIndexFlatSearchParam(nprobe int) (*IndexFlatSearchParam, error) {
 	// auto generate parameters validation code, if any
+		// auto generate parameters validation code, if any
+		if nprobe < 1 {
+			return nil, errors.New("nprobe not valid")
+		}
+		if nprobe > 65536 {
+			return nil, errors.New("nprobe not valid")
+		}
+		
 	return &IndexFlatSearchParam{ 
+		nprobe:nprobe,
 	}, nil
 }
 
